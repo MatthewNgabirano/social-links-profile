@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    
+    button {
+      background-color: hsl(0, 0%, 20%);
+      color: hsl(0, 0%, 100%);
+      border-radius: 3px;
+      width: 60%;
+      height: 30%;
+      padding: 10px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border: none;
+      margin-left: 20%;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    
+    button:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 12%);
+    }
+
+    
+    button:active {
+      background-color: yellow;
+      color: hsl(0, 0%, 12%);
+    }
+
+    
+    .container {
+      width: 25%;
+      height: 80vh;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 3%;
+      margin: auto;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      padding-top: 20px;
+    }
+
+    
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+      margin-left: 45%;
+      margin-top: 20px;
+    }
+
+    h1, p, h4 {
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+    }
+
+    h4 {
+      font-size: 14px;
+      color: hsl(0, 5%, 71%);
+    }
+
+    p {
+      color: hsl(75, 94%, 57%);
+    }
+
+    body {
+      background-color: hsl(0, 0%, 8%);
+    }
+  </style>
+</head>
+
+<body>
+  <button style="color: #ffff;">
+    coded by Matthew Sheldon
+  </button>
+  
+  <div class="container">
+    <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica's Avatar">
+    <section>
+      <h1>Jessica Randall</h1>
+      <p id="cities"><b>London, United Kingdom</b></p>
+      <h4><b>"Front-end developer and avid reader."</b></h4>
+    </section>
+  
+    <div id="social-buttons">
+      <button id="githubButton">GitHub</button><br>
+      <button id="frontendButton">Frontend Mentor</button><br>
+      <button id="linkedinButton">LinkedIn</button><br>
+      <button id="twitterButton">Twitter</button><br>
+      <button id="instagramButton">Instagram</button>
+    </div>
+  
+  </div>
+  
+  <script>
+    
+    document.getElementById("githubButton").addEventListener("click", function() {
+      alert("GitHub button clicked!");
+    });
+
+    document.getElementById("frontendButton").addEventListener("click", function() {
+      alert("Frontend Mentor button clicked!");
+    });
+
+    document.getElementById("linkedinButton").addEventListener("click", function() {
+      alert("LinkedIn button clicked!");
+    });
+
+    document.getElementById("twitterButton").addEventListener("click", function() {
+      alert("Twitter button clicked!");
+    });
+
+    document.getElementById("instagramButton").addEventListener("click", function() {
+      alert("Instagram button clicked!");
+    });
+  </script>
+  
+</body>
+</html>
